@@ -78,7 +78,7 @@ namespace StarterAssets
         // cinemachine
         private float _cinemachineTargetYaw;
         private float _cinemachineTargetPitch;
-
+        
         // player
         private float _speed;
         private float _animationBlend;

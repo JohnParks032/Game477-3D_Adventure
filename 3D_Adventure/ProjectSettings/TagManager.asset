@@ -8,6 +8,8 @@ TagManager:
   - CinemachineTarget
   - Ability
   - DJAbility
+  - SWAbility
+  - ShootAbility
   layers:
   - Default
   - TransparentFX
