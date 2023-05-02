@@ -291,9 +291,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1887043383}
   - {fileID: 1663828782}
   - {fileID: 1779646762}
-  - {fileID: 1887043383}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -799,7 +799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19579923, g: 0.24967226, b: 0.754717, a: 1}
+  m_Color: {r: 0.20425417, g: 0.8490566, b: 0.32328585, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1259,12 +1259,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663828781}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -949.8, y: -505.11996, z: 519.1343}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 478424787}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1663828783
 Rigidbody:
@@ -1474,7 +1474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19579923, g: 0.24967226, b: 0.754717, a: 1}
+  m_Color: {r: 0.8018868, g: 0.3547473, b: 0.19290671, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1527,12 +1527,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779646761}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -946.3, y: -505.11996, z: 511.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 478424787}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1779646763
 Rigidbody:
@@ -1902,7 +1902,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 478424787}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1887043384
 Rigidbody:
@@ -1951,7 +1951,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1974483734}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2185,8 +2185,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1933344601}
   - {fileID: 2120428993}
+  - {fileID: 1933344601}
   - {fileID: 1728687674}
   - {fileID: 915880367}
   m_Father: {fileID: 0}
@@ -2535,7 +2535,7 @@ RectTransform:
   - {fileID: 75467768}
   - {fileID: 1222818219}
   m_Father: {fileID: 1974483734}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2605,6 +2605,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1887043379}
     - target: {fileID: 901549360, guid: 5fe6e76e2e0759943955712aefb00879, type: 3}
+      propertyPath: SWAbility
+      value: 
+      objectReference: {fileID: 1663828781}
+    - target: {fileID: 901549360, guid: 5fe6e76e2e0759943955712aefb00879, type: 3}
       propertyPath: healthbar
       value: 
       objectReference: {fileID: 2120428994}
@@ -2612,6 +2616,18 @@ PrefabInstance:
       propertyPath: DJAbilityUI
       value: 
       objectReference: {fileID: 1933344600}
+    - target: {fileID: 901549360, guid: 5fe6e76e2e0759943955712aefb00879, type: 3}
+      propertyPath: SWAbilityUI
+      value: 
+      objectReference: {fileID: 1728687673}
+    - target: {fileID: 901549360, guid: 5fe6e76e2e0759943955712aefb00879, type: 3}
+      propertyPath: ShootAbility
+      value: 
+      objectReference: {fileID: 1779646761}
+    - target: {fileID: 901549360, guid: 5fe6e76e2e0759943955712aefb00879, type: 3}
+      propertyPath: ShootAbilityUI
+      value: 
+      objectReference: {fileID: 915880366}
     - target: {fileID: 5107533357578360833, guid: 5fe6e76e2e0759943955712aefb00879,
         type: 3}
       propertyPath: m_RootOrder

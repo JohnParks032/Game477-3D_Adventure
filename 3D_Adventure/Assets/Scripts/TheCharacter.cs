@@ -32,6 +32,56 @@ public class TheCharacter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetButtonDown("Fire1")) {
+            if (DJAbilityUI.activeSelf == true) {
+                if (GameObject.FindWithTag("SWAbility")) {
+                    if (GameObject.FindWithTag("ShootAbility")) {
+                        print("Nothing to switch to");
+                    }
+                    else {
+                        DJAbilityUI.SetActive(false);
+                        ShootAbilityUI.SetActive(true);
+                    }
+                }
+                else {
+                    DJAbilityUI.SetActive(false);
+                    SWAbilityUI.SetActive(true);
+                }
+            }
+            else if (SWAbilityUI.activeSelf == true) {
+                if (GameObject.FindWithTag("ShootAbility")) {
+                    if (GameObject.FindWithTag("DJAbility")) {
+                        print("Nothing to switch to");
+                    }
+                    else {
+                        SWAbilityUI.SetActive(false);
+                        DJAbilityUI.SetActive(true);
+                    }
+                }
+                else {
+                    SWAbilityUI.SetActive(false);
+                    ShootAbilityUI.SetActive(true);
+                }
+            }
+            else if (ShootAbilityUI.activeSelf == true) {
+                if (GameObject.FindWithTag("DJAbility")) {
+                    if (GameObject.FindWithTag("SWAbility")) {
+                        print("Nothing to switch to");
+                    }
+                    else {
+                        ShootAbilityUI.SetActive(false);
+                        SWAbilityUI.SetActive(true);
+                    }
+                }
+                else {
+                    ShootAbilityUI.SetActive(false);
+                    DJAbilityUI.SetActive(true);
+                }
+            }
+            else {
+                print("Get lost");
+            }
+        }
         if (DJAbilityUI.activeSelf == true) {
             DJValue = 1;
         }
@@ -54,8 +104,8 @@ public class TheCharacter : MonoBehaviour
     void OnTriggerEnter(Collider collision){
         if (collision.gameObject.CompareTag("DJAbility")){
             Destroy(DJAbility);
-            //SWAbilityUI.SetActive(false);
-            //ShootAbilityUI.SetActive(false);
+            SWAbilityUI.SetActive(false);
+            ShootAbilityUI.SetActive(false);
             DJAbilityUI.SetActive(true);
         }
         if (collision.gameObject.CompareTag("SWAbility")){
