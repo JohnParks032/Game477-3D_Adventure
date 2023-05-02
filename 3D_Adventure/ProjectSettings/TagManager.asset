@@ -10,6 +10,7 @@ TagManager:
   - DJAbility
   - SWAbility
   - ShootAbility
+  - Coin
   layers:
   - Default
   - TransparentFX

@@ -10,6 +10,7 @@ public class Coin : MonoBehaviour, ICollectible
     {
         Debug.Log("CoinCollected");
         Destroy(gameObject);
+        Game.globalInstance.sndPlayer.PlaySound(SoundType.COIN, GetComponent<AudioSource>());
         OnCoinCollected?.Invoke(); 
     }
 }

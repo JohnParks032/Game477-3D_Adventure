@@ -5,15 +5,7 @@ using UnityEngine;
 
 public enum SoundType
 {
-    BTN,
-    BURGER_BUILD,
-    BURGER_COOK,
-    FRIES_COOK,
-    IC_BREAK,
-    ITEM_COMPLETE,
-    MAIN_BG,
-    MENU_BG,
-    ORDER_COMPLETE
+    COIN
 }
 
 public struct Range
@@ -83,15 +75,7 @@ public class AudioManager : MonoBehaviour
     {
         audioSrc = GetComponent<AudioSource>();
         sounds = new Dictionary<SoundType, SoundCollection>() {
-      {SoundType.BTN, new SoundCollection("btn") },
-      {SoundType.BURGER_BUILD, new SoundCollection("burger_build") },
-      {SoundType.BURGER_COOK, new SoundCollection("burger_cook") },
-      {SoundType.FRIES_COOK, new SoundCollection("fries_cook") },
-      {SoundType.IC_BREAK, new SoundCollection("ic_break") },
-      {SoundType.ITEM_COMPLETE, new SoundCollection("item_complete") },
-      {SoundType.MAIN_BG, new SoundCollection("main_bg") },
-      {SoundType.MENU_BG, new SoundCollection("menu_bg") },
-      {SoundType.ORDER_COMPLETE, new SoundCollection("order_complete") }
+      {SoundType.COIN, new SoundCollection("coin") }
     };
     }
 
