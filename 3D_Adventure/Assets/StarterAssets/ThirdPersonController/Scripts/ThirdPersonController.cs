@@ -80,6 +80,7 @@ namespace StarterAssets
         private float _cinemachineTargetPitch;
         
         // player
+        private int jumps = 0;
         private float _speed;
         private float _animationBlend;
         private float _targetRotation = 0.0f;
@@ -286,6 +287,13 @@ namespace StarterAssets
                 // reset the fall timeout timer
                 _fallTimeoutDelta = FallTimeout;
 
+                if (GetComponent<TheCharacter>().DJValue == 0){
+                    jumps = 1;
+                }
+                else {
+                    jumps = 2;
+                }
+
                 // update animator if using character
                 if (_hasAnimator)
                 {
@@ -304,6 +312,7 @@ namespace StarterAssets
                 {
                     // the square root of H * -2 * G = how much velocity needed to reach desired height
                     _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+                    jumps -= 1;
 
                     // update animator if using character
                     if (_hasAnimator)
@@ -320,8 +329,13 @@ namespace StarterAssets
             }
             else
             {
-                // reset the jump timeout timer
                 _jumpTimeoutDelta = JumpTimeout;
+                if (_input.jump && jumps >= 0){
+                    _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+                    jumps -= 1;
+                }
+                // reset the jump timeout timer
+
 
                 // fall timeout
                 if (_fallTimeoutDelta >= 0.0f)
