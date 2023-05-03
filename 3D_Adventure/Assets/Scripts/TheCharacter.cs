@@ -14,10 +14,16 @@ public class TheCharacter : MonoBehaviour
     public GameObject ShootAbility;
     public GameObject ShootAbilityUI;
     public GameObject ShootAbilityInstr;
-    public Slider healthbar;
     public int DJValue;
     public int SWValue;
     public int ShootValue;
+
+    public Slider healthbar;
+
+    private bool isInvincible = false;
+    [SerializeField] private float invincibilityDurationSeconds;
+    [SerializeField] private float delayBetweenInvincibilityFlashes;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -74,9 +80,10 @@ public class TheCharacter : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision){
         if (collision.gameObject.CompareTag("Enemy")){
-            healthbar.value -= 20;
-            // Knockback
-            // Invincibility frames
+            LoseHealth(20);
+        }
+        if (collision.gameObject.CompareTag("Hazard")){
+            LoseHealth(10);
         }
     }
     void AbilitySwitch(){
@@ -130,5 +137,28 @@ public class TheCharacter : MonoBehaviour
                 print("Get lost");
             }
         }
+    }
+    private IEnumerator BecomeTemporarilyInvincible(){
+        print("Player turned invincible!");
+        isInvincible = true;
+
+        for (float i = 0; i < invincibilityDurationSeconds; i += delayBetweenInvincibilityFlashes){
+            yield return new WaitForSeconds(delayBetweenInvincibilityFlashes);
+
+        }
+        print("Player is no longer invincible!");
+        isInvincible = false;
+    }
+    public void LoseHealth(int amount){
+        if (isInvincible) return;
+        healthbar.value -= amount;
+
+        // The player died
+        if (healthbar.value <= 0){
+            healthbar.value = 0;
+            // Broadcast some sort of death event here before returning
+            return;
+        }
+        StartCoroutine(BecomeTemporarilyInvincible());
     }
 }

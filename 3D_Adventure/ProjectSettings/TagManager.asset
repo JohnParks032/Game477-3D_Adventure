@@ -11,6 +11,7 @@ TagManager:
   - SWAbility
   - ShootAbility
   - Coin
+  - Hazard
   layers:
   - Default
   - TransparentFX
