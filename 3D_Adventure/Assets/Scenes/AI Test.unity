@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1657,6 +1657,11 @@ PrefabInstance:
       propertyPath: ShootAbilityUI
       value: 
       objectReference: {fileID: 914907302}
+    - target: {fileID: 242157671030930400, guid: 5fe6e76e2e0759943955712aefb00879,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5107533357578360833, guid: 5fe6e76e2e0759943955712aefb00879,
         type: 3}
       propertyPath: m_RootOrder
@@ -1716,6 +1721,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerCapsule Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596367038631822011, guid: 5fe6e76e2e0759943955712aefb00879,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6273612503948167474, guid: 5fe6e76e2e0759943955712aefb00879,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6273612503948167474, guid: 5fe6e76e2e0759943955712aefb00879,
         type: 3}
