@@ -5,7 +5,11 @@ using UnityEngine;
 
 public enum SoundType
 {
-    COIN
+    COIN,
+    ENDING,
+    OVERWORLD,
+    UI_HOVER,
+    UI_SELECT
 }
 
 public struct Range
@@ -75,7 +79,12 @@ public class AudioManager : MonoBehaviour
     {
         audioSrc = GetComponent<AudioSource>();
         sounds = new Dictionary<SoundType, SoundCollection>() {
-      {SoundType.COIN, new SoundCollection("coin") }
+      {SoundType.COIN, new SoundCollection("coin") },
+      {SoundType.ENDING, new SoundCollection("ending") },
+      {SoundType.OVERWORLD, new SoundCollection("overworld") },
+      {SoundType.UI_HOVER, new SoundCollection("ui_hover") },
+      {SoundType.UI_SELECT, new SoundCollection("ui_select") }
+
     };
     }
 
