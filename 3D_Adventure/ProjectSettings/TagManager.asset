@@ -12,6 +12,8 @@ TagManager:
   - ShootAbility
   - Coin
   - Hazard
+  - Enemy
+  - Health
   layers:
   - Default
   - TransparentFX
@@ -20,9 +22,9 @@ TagManager:
   - Water
   - UI
   - Ability
-  - 
-  - 
-  - 
+  - Player
+  - Obstacle
+  - Ground
   - 
   - 
   - 
