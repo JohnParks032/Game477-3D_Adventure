@@ -85,9 +85,9 @@ public class TheCharacter : MonoBehaviour
         if (collision.gameObject.CompareTag("Hazard")){
             LoseHealth(10);
         }
-        if (collision.gameObject.CompareTag("Health")){
-            LoseHealth(-30);
-        }
+        //if (collision.gameObject.CompareTag("Health")){
+            //LoseHealth(-30);
+       // }
     }
     void AbilitySwitch(){
         if (Input.GetButtonDown("Fire1")) {
