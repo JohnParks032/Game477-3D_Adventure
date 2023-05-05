@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1642,6 +1642,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 144068408}
     - target: {fileID: 901549360, guid: 5fe6e76e2e0759943955712aefb00879, type: 3}
+      propertyPath: healthbar
+      value: 
+      objectReference: {fileID: 1697281582}
+    - target: {fileID: 901549360, guid: 5fe6e76e2e0759943955712aefb00879, type: 3}
       propertyPath: DJAbilityUI
       value: 
       objectReference: {fileID: 727803957}
@@ -1657,6 +1661,14 @@ PrefabInstance:
       propertyPath: ShootAbilityUI
       value: 
       objectReference: {fileID: 914907302}
+    - target: {fileID: 901549360, guid: 5fe6e76e2e0759943955712aefb00879, type: 3}
+      propertyPath: invincibilityDurationSeconds
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 901549360, guid: 5fe6e76e2e0759943955712aefb00879, type: 3}
+      propertyPath: delayBetweenInvincibilityFlashes
+      value: 0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 242157671030930400, guid: 5fe6e76e2e0759943955712aefb00879,
         type: 3}
       propertyPath: m_Layer
