@@ -53,7 +53,7 @@ public class Dialogue : MonoBehaviour
         if (index < lines.Length - 1)
         {
             index++;
-            textComponent.text += string.Empty;
+            textComponent.text = string.Empty;
             StartCoroutine(TypeLine());
         }
         else
