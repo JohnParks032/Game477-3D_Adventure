@@ -15,6 +15,7 @@ TagManager:
   - Enemy
   - Health
   - Breakable
+  - Shockwave
   layers:
   - Default
   - TransparentFX

@@ -5,15 +5,23 @@ using UnityEngine.UI;
 
 public class TheCharacter : MonoBehaviour
 {
+    public Camera camera1;
+    public Camera camera2;
+
     public GameObject DJAbility;
     public GameObject DJAbilityUI;
     public GameObject DJAbilityInstr;
+
     public GameObject SWAbility;
     public GameObject SWAbilityUI;
     public GameObject SWAbilityInstr;
+    public GameObject SWCollider;
+
     public GameObject ShootAbility;
     public GameObject ShootAbilityUI;
     public GameObject ShootAbilityInstr;
+    public GameObject ShootAbilityCamera;
+
     public int DJValue;
     public int SWValue;
     public int ShootValue;
@@ -23,7 +31,8 @@ public class TheCharacter : MonoBehaviour
     private bool isInvincible = false;
     [SerializeField] private float invincibilityDurationSeconds;
     [SerializeField] private float delayBetweenInvincibilityFlashes;
-
+    [SerializeField] private float shockwaveDurationSeconds;
+    [SerializeField] private float delayBetweenShockwave;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,12 +42,15 @@ public class TheCharacter : MonoBehaviour
         DJAbilityUI.SetActive(false);
         SWAbilityUI.SetActive(false);
         ShootAbilityUI.SetActive(false);
+        SWCollider.SetActive(false);
+        ShootAbilityCamera.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
         AbilitySwitch();
+        Shockwave();
         if (DJAbilityUI.activeSelf == true) {
             DJValue = 1;
         }
@@ -140,6 +152,20 @@ public class TheCharacter : MonoBehaviour
                 print("Get lost");
             }
         }
+    }
+    public void Shockwave(){
+        if (Input.GetButtonDown("Fire2")){
+            if (SWAbilityUI.activeSelf == true){
+                StartCoroutine(ShockwaveRoutine());
+            }
+        }
+    }
+    private IEnumerator ShockwaveRoutine(){
+        SWCollider.SetActive(true);
+        for (float i = 0; i < shockwaveDurationSeconds; i += delayBetweenShockwave){
+            yield return new WaitForSeconds(1);
+        }
+        SWCollider.SetActive(false);
     }
     private IEnumerator BecomeTemporarilyInvincible(){
         print("Player turned invincible!");
