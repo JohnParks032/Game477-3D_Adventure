@@ -31,7 +31,6 @@ public class TheCharacter : MonoBehaviour
     [SerializeField] private float shockwaveDurationSeconds;
     [SerializeField] private float delayBetweenShockwave;
 
-    Vector3 startPosition;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,7 +41,6 @@ public class TheCharacter : MonoBehaviour
         SWAbilityUI.SetActive(false);
         ShootAbilityUI.SetActive(false);
         SWCollider.SetActive(false);
-        startPosition = transform.position;
     }
 
     // Update is called once per frame
