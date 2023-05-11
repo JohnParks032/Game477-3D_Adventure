@@ -9,7 +9,9 @@ public enum SoundType
     ENDING,
     OVERWORLD,
     UI_HOVER,
-    UI_SELECT
+    UI_SELECT,
+    ROCK_BREAK,
+    TROPHY
 }
 
 public struct Range
@@ -83,7 +85,10 @@ public class AudioManager : MonoBehaviour
       {SoundType.ENDING, new SoundCollection("ending") },
       {SoundType.OVERWORLD, new SoundCollection("overworld") },
       {SoundType.UI_HOVER, new SoundCollection("ui_hover") },
-      {SoundType.UI_SELECT, new SoundCollection("ui_select") }
+      {SoundType.UI_SELECT, new SoundCollection("ui_select") },
+      {SoundType.ROCK_BREAK, new SoundCollection("rock_break") },
+      {SoundType.TROPHY, new SoundCollection("trophy") }
+
 
     };
     }
