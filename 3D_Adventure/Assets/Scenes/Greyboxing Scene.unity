@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9486,11 +9486,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 946370317}
+    - target: {fileID: 7037387233119210578, guid: bce2e4533e059034fa2ec06581023604,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MainMenuButtion
+      objectReference: {fileID: 0}
     - target: {fileID: 7037387233403825921, guid: bce2e4533e059034fa2ec06581023604,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 946370317}
+    - target: {fileID: 7037387233403825921, guid: bce2e4533e059034fa2ec06581023604,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Quit
+      objectReference: {fileID: 0}
     - target: {fileID: 7037387234266538192, guid: bce2e4533e059034fa2ec06581023604,
         type: 3}
       propertyPath: m_Name
@@ -9556,6 +9566,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 946370317}
+    - target: {fileID: 7037387234628706759, guid: bce2e4533e059034fa2ec06581023604,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bce2e4533e059034fa2ec06581023604, type: 3}
 --- !u!4 &7881741078368561868 stripped
