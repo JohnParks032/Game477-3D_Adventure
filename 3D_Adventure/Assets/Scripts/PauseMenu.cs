@@ -41,7 +41,10 @@ public class PauseMenu : MonoBehaviour
 
     public void MainMenuButtion() 
     {
+        PauseMenuCanvas.SetActive(false);
         Time.timeScale = 1f;
+        GamePaused = false;
+        Camera.main.GetComponent<CinemachineBrain>().enabled = true;
         SceneManager.LoadScene("MainMenu");
     }
 

@@ -113,7 +113,7 @@ public class AudioManager : MonoBehaviour
             if (audioSrc.gameObject.activeSelf)
             {
                 audioSrc.clip = sounds[type].RandomClip();
-                audioSrc.PlayOneShot(audioSrc.clip, 0.01f);
+                audioSrc.PlayOneShot(audioSrc.clip, 1.0f);
             }
         }
     }

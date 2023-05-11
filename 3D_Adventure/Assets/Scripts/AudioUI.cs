@@ -6,6 +6,6 @@ public class AudioUI : MonoBehaviour
 {
    public void btnClick()
     {
-        Game.globalInstance.sndPlayer.PlaySound(SoundType.UI_SELECT, GetComponent<AudioSource>());
+        Game.globalInstance.sndPlayer.PlayOnce(SoundType.UI_SELECT, GetComponent<AudioSource>());
     }
 }
