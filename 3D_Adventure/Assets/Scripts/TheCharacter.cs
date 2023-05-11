@@ -2,12 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TheCharacter : MonoBehaviour
 {
-    public GameObject camera1;
-    public GameObject camera2;
-
     public GameObject DJAbility;
     public GameObject DJAbilityUI;
     public GameObject DJAbilityInstr;
@@ -20,9 +18,6 @@ public class TheCharacter : MonoBehaviour
     public GameObject ShootAbility;
     public GameObject ShootAbilityUI;
     public GameObject ShootAbilityInstr;
-    public GameObject ShootAbilityCamera;
-
-    public GameObject projectilePrefas;
 
     public int DJValue;
     public int SWValue;
@@ -35,6 +30,8 @@ public class TheCharacter : MonoBehaviour
     [SerializeField] private float delayBetweenInvincibilityFlashes;
     [SerializeField] private float shockwaveDurationSeconds;
     [SerializeField] private float delayBetweenShockwave;
+
+    Vector3 startPosition;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,7 +42,7 @@ public class TheCharacter : MonoBehaviour
         SWAbilityUI.SetActive(false);
         ShootAbilityUI.SetActive(false);
         SWCollider.SetActive(false);
-        camera2.SetActive(false);
+        startPosition = transform.position;
     }
 
     // Update is called once per frame
@@ -53,6 +50,7 @@ public class TheCharacter : MonoBehaviour
     {
         AbilitySwitch();
         Shockwave();
+        Reset();
         if (DJAbilityUI.activeSelf == true) {
             DJValue = 1;
         }
@@ -188,9 +186,14 @@ public class TheCharacter : MonoBehaviour
         // The player died
         if (healthbar.value <= 0){
             healthbar.value = 0;
-            // Broadcast some sort of death event here before returning
             return;
         }
         StartCoroutine(BecomeTemporarilyInvincible());
+    }
+    void Reset(){
+        if (healthbar.value <= 0){
+            print("die");
+            SceneManager.LoadScene("Greyboxing Scene");
+        }
     }
 }
