@@ -19,7 +19,7 @@ public class Dialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             if (textComponent.text == lines[index])
             {
@@ -36,6 +36,7 @@ public class Dialogue : MonoBehaviour
     {
         index = 0;
         gameObject.SetActive(true);
+        textComponent.text = string.Empty;
         StartCoroutine(TypeLine());
     }
 
