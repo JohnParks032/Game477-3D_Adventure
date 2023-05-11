@@ -20,6 +20,10 @@ public class PlayerInteract : MonoBehaviour
                         npcInteractable.Interact();
                     }
                 }
+                else if (collider.TryGetComponent(out NPCExit npcExit))
+                {
+                    npcExit.Exit();
+                }
             }
         }
     }

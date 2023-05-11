@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1287442845292043840}
   - component: {fileID: 628503717922890722}
+  - component: {fileID: 8993672828826170310}
+  - component: {fileID: 5453006223356121664}
   m_Layer: 0
   m_Name: woodpecker_v2
   m_TagString: Untagged
@@ -107,6 +109,33 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.0018211603, y: 0.11545783, z: -0.017352238}
     m_Extent: {x: 0.9293113, y: 0.9480805, z: 0.465266}
   m_DirtyAABB: 0
+--- !u!136 &8993672828826170310
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75940634913307029}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.9141799
+  m_Height: 1.8652594
+  m_Direction: 1
+  m_Center: {x: 0.001712844, y: 0.78312653, z: -0.010396376}
+--- !u!114 &5453006223356121664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75940634913307029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64d41213e84d926419c613358125e9d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 0}
 --- !u!1 &691440958805786756
 GameObject:
   m_ObjectHideFlags: 0
