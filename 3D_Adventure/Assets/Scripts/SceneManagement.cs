@@ -20,9 +20,14 @@ public class SceneManagement : MonoBehaviour
         Cursor.visible = false;
         SceneManager.LoadScene("Greyboxing Scene");
     }
+    public async void Options()
+    {
+        await Task.Delay(2500);
+        SceneManager.LoadScene("Controls Scene");
+    }
     public async void Quit()
     {
-        await Task.Delay(500);
+        await Task.Delay(2500);
         Application.Quit();
     }
 }
