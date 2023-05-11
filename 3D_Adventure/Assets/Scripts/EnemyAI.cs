@@ -13,6 +13,7 @@ public class EnemyAI : MonoBehaviour
 
     public float health;
 
+    public float shockTime = 0;
     // Patrol
     public Vector3 walkPoint;
     bool walkPointSet;
@@ -41,6 +42,10 @@ public class EnemyAI : MonoBehaviour
         if (!playerInSightRange && !playerInAttackRange) Patrol();
         if (playerInSightRange && !playerInAttackRange) Chase();
         if (playerInSightRange && playerInAttackRange) Attack();
+        shockTime -= 1;
+        if (shockTime == 0){
+            agent.speed = 3;
+        }
     }
 
     private void Patrol()
@@ -115,5 +120,11 @@ public class EnemyAI : MonoBehaviour
     private void DestroyEnemy()
     {
         Destroy(gameObject);
+    }
+    void OnTriggerEnter(Collider collision){
+        if (collision.transform.CompareTag("Shockwave")){
+            agent.speed = 0.1f;
+            shockTime = 160;
+        }
     }
 }

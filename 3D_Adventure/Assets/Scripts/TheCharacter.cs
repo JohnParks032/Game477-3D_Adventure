@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class TheCharacter : MonoBehaviour
 {
-    public Camera camera1;
-    public Camera camera2;
+    public GameObject camera1;
+    public GameObject camera2;
 
     public GameObject DJAbility;
     public GameObject DJAbilityUI;
@@ -21,6 +21,8 @@ public class TheCharacter : MonoBehaviour
     public GameObject ShootAbilityUI;
     public GameObject ShootAbilityInstr;
     public GameObject ShootAbilityCamera;
+
+    public GameObject projectilePrefas;
 
     public int DJValue;
     public int SWValue;
@@ -43,7 +45,7 @@ public class TheCharacter : MonoBehaviour
         SWAbilityUI.SetActive(false);
         ShootAbilityUI.SetActive(false);
         SWCollider.SetActive(false);
-        ShootAbilityCamera.SetActive(false);
+        camera2.SetActive(false);
     }
 
     // Update is called once per frame
@@ -101,6 +103,7 @@ public class TheCharacter : MonoBehaviour
             //LoseHealth(-30);
        // }
     }
+
     void AbilitySwitch(){
         if (Input.GetButtonDown("Fire1")) {
             if (DJAbilityUI.activeSelf == true) {
@@ -163,7 +166,7 @@ public class TheCharacter : MonoBehaviour
     private IEnumerator ShockwaveRoutine(){
         SWCollider.SetActive(true);
         for (float i = 0; i < shockwaveDurationSeconds; i += delayBetweenShockwave){
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(delayBetweenShockwave);
         }
         SWCollider.SetActive(false);
     }
