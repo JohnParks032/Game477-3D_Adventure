@@ -6,7 +6,7 @@ public class SceneManagement : MonoBehaviour
 {
    public void StartScene()
     {
-        SceneManager.LoadScene("Start Scene");
+        SceneManager.LoadScene("MainMenu");
     }
     public void EndScene()
     {
@@ -14,7 +14,9 @@ public class SceneManagement : MonoBehaviour
     }
     public void Level1()
     {
-        SceneManager.LoadScene("Level 1 Greybox");
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        SceneManager.LoadScene("Greyboxing Scene");
     }
     public void Quit()
     {
