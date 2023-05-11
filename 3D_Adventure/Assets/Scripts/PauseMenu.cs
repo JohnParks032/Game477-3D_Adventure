@@ -1,3 +1,4 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -12,13 +13,7 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (GamePaused)
-            {
-                Resume();
-                Cursor.visible = false;
-                Cursor.lockState = CursorLockMode.Locked;
-            }
-            else
+            if (!GamePaused)
             {
                 Pause();
                 Cursor.visible = true;
@@ -29,15 +24,19 @@ public class PauseMenu : MonoBehaviour
     }
     public void Resume()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         PauseMenuCanvas.SetActive(false);
         Time.timeScale = 1f;
         GamePaused = false;
+        Camera.main.GetComponent<CinemachineBrain>().enabled = true;
     }
     void Pause()
     {
         PauseMenuCanvas.SetActive(true);
         Time.timeScale = 0f;
         GamePaused = true;
+        Camera.main.GetComponent<CinemachineBrain>().enabled = false;
     }
 
     public void MainMenuButtion() 
