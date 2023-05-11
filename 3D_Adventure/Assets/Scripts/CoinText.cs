@@ -19,6 +19,6 @@ public class CoinText : MonoBehaviour
     public void IncrementCoinCount()
     {
         coinCount++;
-        coinText.text = $"Acorns: {coinCount} / 40";
+        coinText.text = $"Acorns: {coinCount} / 20";
     }
 }
