@@ -16,6 +16,8 @@ TagManager:
   - Health
   - Breakable
   - Shockwave
+  - block1
+  - block2
   layers:
   - Default
   - TransparentFX

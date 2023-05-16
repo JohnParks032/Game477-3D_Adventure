@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 5017465367169272006}
   - component: {fileID: 7081181863450246156}
   - component: {fileID: 4491545500156323344}
-  m_Layer: 0
+  - component: {fileID: 3784337069608749738}
+  m_Layer: 8
   m_Name: rock02
-  m_TagString: Untagged
+  m_TagString: Breakable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 8738554561595989465}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -24.2, y: 2.42, z: -20.86}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 4.6, y: 4.6, z: 4.6}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -97,3 +98,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.296341, y: 5.376189, z: 4.422264}
   m_Center: {x: 0.00000011920929, y: 0.00000011920929, z: 0}
+--- !u!114 &3784337069608749738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8738554561595989465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b63e2a25605da9b41ae96cde1c481fa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
