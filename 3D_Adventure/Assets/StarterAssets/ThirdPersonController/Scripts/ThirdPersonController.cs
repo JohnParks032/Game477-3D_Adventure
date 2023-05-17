@@ -14,6 +14,12 @@ namespace StarterAssets
 #endif
     public class ThirdPersonController : MonoBehaviour
     {
+        Animator m_animator;
+        bool m_jump;
+        bool m_walking;
+        bool m_sprinting;
+
+
         [Header("Player")]
         [Tooltip("Move speed of the character in m/s")]
         public float MoveSpeed = 2.0f;
@@ -135,6 +141,9 @@ namespace StarterAssets
 
         private void Start()
         {
+            m_animator = gameObject.GetComponent<Animator>();
+            m_animator.SetBool("isMoving", false);
+
             _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
             
             _hasAnimator = TryGetComponent(out _animator);
@@ -160,6 +169,7 @@ namespace StarterAssets
             JumpAndGravity();
             GroundedCheck();
             Move();
+            print(_speed);
         }
 
         private void LateUpdate()
@@ -277,6 +287,18 @@ namespace StarterAssets
             {
                 _animator.SetFloat(_animIDSpeed, _animationBlend);
                 _animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
+                if (_speed > 3.0f && _speed < 10.0f){
+                    m_animator.SetBool("isMoving", true);
+                    m_animator.SetBool("sprintActive", false);
+                }
+                else if (_speed > 10.0f){
+                    m_animator.SetBool("isMoving", true);
+                    m_animator.SetBool("sprintActive", true);
+                }
+                if (_speed < 3.0f) {
+                    m_animator.SetBool("isMoving", false);
+                    m_animator.SetBool("sprintActive", false);
+                }
             }
         }
 
@@ -286,6 +308,7 @@ namespace StarterAssets
             {
                 // reset the fall timeout timer
                 _fallTimeoutDelta = FallTimeout;
+                m_animator.SetBool("isTouchingGround", true);
 
                 if (GetComponent<TheCharacter>().DJValue == 0){
                     jumps = 1;
@@ -318,6 +341,7 @@ namespace StarterAssets
                     if (_hasAnimator)
                     {
                         _animator.SetBool(_animIDJump, true);
+                        m_animator.Play("jumpUp");
                     }
                 }
 
@@ -348,6 +372,7 @@ namespace StarterAssets
                     if (_hasAnimator)
                     {
                         _animator.SetBool(_animIDFreeFall, true);
+                        m_animator.SetBool("isTouchingGround", false);
                     }
                 }
 
