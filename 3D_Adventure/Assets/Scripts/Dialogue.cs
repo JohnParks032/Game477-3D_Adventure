@@ -31,6 +31,10 @@ public class Dialogue : MonoBehaviour
                 textComponent.text = lines[index];
             }
         }
+        else if (Input.GetKeyDown(KeyCode.X))
+        {
+            gameObject.SetActive(false);
+        }
     }
     public void StartDialogue()
     {

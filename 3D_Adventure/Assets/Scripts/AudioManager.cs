@@ -11,7 +11,10 @@ public enum SoundType
     UI_HOVER,
     UI_SELECT,
     ROCK_BREAK,
-    TROPHY
+    TROPHY,
+    HARP,
+    DRUM,
+    OBOE
 }
 
 public struct Range
@@ -87,7 +90,10 @@ public class AudioManager : MonoBehaviour
       {SoundType.UI_HOVER, new SoundCollection("ui_hover") },
       {SoundType.UI_SELECT, new SoundCollection("ui_select") },
       {SoundType.ROCK_BREAK, new SoundCollection("rock_break") },
-      {SoundType.TROPHY, new SoundCollection("trophy") }
+      {SoundType.TROPHY, new SoundCollection("trophy") },
+      {SoundType.HARP, new SoundCollection("harp") },
+      {SoundType.DRUM, new SoundCollection("drum") },
+      {SoundType.OBOE, new SoundCollection("oboe") }
 
 
     };

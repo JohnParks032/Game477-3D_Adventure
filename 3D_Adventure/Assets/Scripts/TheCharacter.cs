@@ -156,6 +156,10 @@ public class TheCharacter : MonoBehaviour
         if (Input.GetButtonDown("Fire2")){
             if (SWAbilityUI.activeSelf == true){
                 StartCoroutine(ShockwaveRoutine());
+                Game.globalInstance.sndPlayer.PlayOnce(SoundType.OBOE, GetComponent<AudioSource>());
+            }
+            else if (ShootAbilityUI.activeSelf== true) {
+                Game.globalInstance.sndPlayer.PlayOnce(SoundType.HARP, GetComponent<AudioSource>());
             }
         }
     }
@@ -191,7 +195,7 @@ public class TheCharacter : MonoBehaviour
     void Reset(){
         if (healthbar.value <= 0){
             print("die");
-            SceneManager.LoadScene("Greyboxing Scene");
+            SceneManager.LoadScene("Game");
         }
     }
 }
