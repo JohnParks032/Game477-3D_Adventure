@@ -5,9 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagement : MonoBehaviour
 {
-   public void StartScene()
+    public async void StartScene()
     {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        await Task.Delay(1000);
         SceneManager.LoadScene("MainMenu");
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
     public void EndScene()
     {
@@ -15,19 +20,25 @@ public class SceneManagement : MonoBehaviour
     }
     public async void Level1()
     {
-        await Task.Delay(2500);
-        Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        SceneManager.LoadScene("Greyboxing Scene");
+        Cursor.lockState = CursorLockMode.Locked;
+        await Task.Delay(1000);
+        SceneManager.LoadScene("Game");
     }
     public async void Options()
     {
-        await Task.Delay(2500);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        await Task.Delay(1000);
         SceneManager.LoadScene("Controls Scene");
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
     public async void Quit()
     {
-        await Task.Delay(2500);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        await Task.Delay(1000);
         Application.Quit();
     }
 }
