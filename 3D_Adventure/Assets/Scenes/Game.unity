@@ -27512,6 +27512,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 638925968}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &641834390 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5233247775252219563, guid: 1a238269aaaf9447ba6a4f2b4196ab43,
+    type: 3}
+  m_PrefabInstance: {fileID: 622859273942240404}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &642704160
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33130,6 +33136,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b9292771bf2f4633b9372beda6e091f, type: 3}
+--- !u!1 &665187456 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7148914875509323109, guid: 75ad0390b4524425090cc9565ca4bb8b,
+    type: 3}
+  m_PrefabInstance: {fileID: 950369775}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &669043999
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33646,12 +33658,12 @@ PrefabInstance:
         type: 3}
       propertyPath: DJAbility
       value: 
-      objectReference: {fileID: 1063510745}
+      objectReference: {fileID: 665187456}
     - target: {fileID: 2807783229228523581, guid: c48005c27be9adb429e2b838d53c3787,
         type: 3}
       propertyPath: SWAbility
       value: 
-      objectReference: {fileID: 2109517593}
+      objectReference: {fileID: 641834390}
     - target: {fileID: 2807783229228523581, guid: c48005c27be9adb429e2b838d53c3787,
         type: 3}
       propertyPath: WinCanvas
@@ -33686,7 +33698,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ShootAbility
       value: 
-      objectReference: {fileID: 1824369459}
+      objectReference: {fileID: 1658511302}
     - target: {fileID: 2807783229228523581, guid: c48005c27be9adb429e2b838d53c3787,
         type: 3}
       propertyPath: scoreTextWin
@@ -67528,6 +67540,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 421711782821452373, guid: 169818b85837c440fb27b219220ddf0c,
     type: 3}
   m_PrefabInstance: {fileID: 1658489989}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1658511302 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3913830559797050788, guid: 02c4284f711874ac4992d32ac3ab7acf,
+    type: 3}
+  m_PrefabInstance: {fileID: 7898752173718724271}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1659480114
 PrefabInstance:
