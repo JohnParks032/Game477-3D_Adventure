@@ -6,14 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class EndGame : MonoBehaviour
 {
+    public GameObject WinCanvas;
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("exit interaction");
-            SceneManager.LoadScene("MainMenu");
+            print("win");
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
+            WinCanvas.SetActive(true);
+            Time.timeScale = 0f;
+            Camera.main.GetComponent<CinemachineBrain>().enabled = false;
         }
     }
 }

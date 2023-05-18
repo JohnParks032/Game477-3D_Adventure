@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Cinemachine;
+using TMPro;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class TheCharacter : MonoBehaviour
 {
@@ -21,6 +24,13 @@ public class TheCharacter : MonoBehaviour
 
     public GameObject Endgame;
     public GameObject EndingDialogue;
+
+    public GameObject DeathCanvas;
+    public GameObject WinCanvas;
+
+    public TextMeshProUGUI scoreTextDeath;
+    public TextMeshProUGUI scoreTextWin;
+    public Score ScoreLogic;
 
     public int DJValue;
     public int SWValue;
@@ -74,6 +84,9 @@ public class TheCharacter : MonoBehaviour
     void OnTriggerEnter(Collider collision){
         if (collision.gameObject.CompareTag("DJAbility")){
             Game.globalInstance.sndPlayer.PlayOnce(SoundType.ABILITY_PICKUP, GetComponent<AudioSource>());
+            ScoreLogic.score += 1000;
+            scoreTextDeath.text = $"Score: {ScoreLogic.score}";
+            scoreTextWin.text = $"Score: {ScoreLogic.score}";
             Destroy(DJAbility);
             SWAbilityUI.SetActive(false);
             ShootAbilityUI.SetActive(false);
@@ -81,6 +94,9 @@ public class TheCharacter : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("SWAbility")){
             Game.globalInstance.sndPlayer.PlayOnce(SoundType.ABILITY_PICKUP, GetComponent<AudioSource>());
+            ScoreLogic.score += 1000;
+            scoreTextDeath.text = $"Score: {ScoreLogic.score}";
+            scoreTextWin.text = $"Score: {ScoreLogic.score}";
             Destroy(SWAbility);
             DJAbilityUI.SetActive(false);
             ShootAbilityUI.SetActive(false);
@@ -88,6 +104,9 @@ public class TheCharacter : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("ShootAbility")){
             Game.globalInstance.sndPlayer.PlayOnce(SoundType.ABILITY_PICKUP, GetComponent<AudioSource>());
+            ScoreLogic.score += 1000;
+            scoreTextDeath.text = $"Score: {ScoreLogic.score}";
+            scoreTextWin.text = $"Score: {ScoreLogic.score}";
             Destroy(ShootAbility);
             SWAbilityUI.SetActive(false);
             DJAbilityUI.SetActive(false);
@@ -203,7 +222,11 @@ public class TheCharacter : MonoBehaviour
     void Reset(){
         if (healthbar.value <= 0){
             print("die");
-            SceneManager.LoadScene("Game");
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            DeathCanvas.SetActive(true);
+            Time.timeScale = 0f;
+            Camera.main.GetComponent<CinemachineBrain>().enabled = false;
         }
     }
 }

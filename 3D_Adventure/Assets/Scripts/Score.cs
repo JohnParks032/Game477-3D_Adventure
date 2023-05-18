@@ -2,11 +2,15 @@ using UnityEngine;
 using HighScore;
 using TMPro;
 using UnityEditor.Rendering.LookDev;
+using Cinemachine;
+using UnityEngine.SceneManagement;
 
 public class Score : MonoBehaviour
 {
-    public TMP_InputField inputPlayerName;
-    public TextMeshProUGUI scoreText;
+    public TMP_InputField inputPlayerNameDeath;
+    public TMP_InputField inputPlayerNameWin;
+    public TextMeshProUGUI scoreTextDeath;
+    public TextMeshProUGUI scoreTextWin;
     public int score;
 
     public void Start()
@@ -27,17 +31,29 @@ public class Score : MonoBehaviour
     public void CoinCollected()
     {
         score += 100;
-        scoreText.text = $"Score: {score}";
+        scoreTextWin.text = $"Score: {score}";
+        scoreTextDeath.text = $"Score: {score}";
     }
     public void TrophyCollected()
     {
         score += 10000;
-        scoreText.text = $"Score: {score}";
+        scoreTextWin.text = $"Score: {score}";
+        scoreTextDeath.text = $"Score: {score}";
     }
 
-    public void SubmitScore()
+    public void SubmitScoreDeath()
     {
-        HS.SubmitHighScore(this, inputPlayerName.text, score);
+        HS.SubmitHighScore(this, inputPlayerNameDeath.text, score);
+        Time.timeScale = 1f;
+        Camera.main.GetComponent<CinemachineBrain>().enabled = true;
+        SceneManager.LoadScene("MainMenu");
+    }
+    public void SubmitScoreWin()
+    {
+        HS.SubmitHighScore(this, inputPlayerNameWin.text, score);
+        Time.timeScale = 1f;
+        Camera.main.GetComponent<CinemachineBrain>().enabled = true;
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void ClearScores()
