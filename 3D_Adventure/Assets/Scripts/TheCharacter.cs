@@ -19,6 +19,9 @@ public class TheCharacter : MonoBehaviour
     public GameObject ShootAbilityUI;
     public GameObject ShootAbilityInstr;
 
+    public GameObject Endgame;
+    public GameObject EndingDialogue;
+
     public int DJValue;
     public int SWValue;
     public int ShootValue;
@@ -86,6 +89,8 @@ public class TheCharacter : MonoBehaviour
             SWAbilityUI.SetActive(false);
             DJAbilityUI.SetActive(false);
             ShootAbilityUI.SetActive(true);
+            Endgame.SetActive(true);
+            EndingDialogue.SetActive(true);
         }
     }
     void OnCollisionEnter(Collision collision){
