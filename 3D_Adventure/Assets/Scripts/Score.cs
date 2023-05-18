@@ -16,7 +16,7 @@ public class Score : MonoBehaviour
     public void Start()
     {
         score = 0;
-        HS.Init(this, "Danole the Anole and the Harmonic Tree"); // you can hard code your game's name
+        HS.Init(this, "Danole the Anole and the Harmonic Hunt"); // you can hard code your game's name
     }
     public void OnEnable()
     {

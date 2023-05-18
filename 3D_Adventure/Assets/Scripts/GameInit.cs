@@ -7,6 +7,6 @@ public class GameInit : MonoBehaviour
 {
     void Start()
     {
-        HS.Init(this, "Danole the Anole and the Harmonic Tree");
+        HS.Init(this, "Danole the Anole and the Harmonic Hunt");
     }
 }

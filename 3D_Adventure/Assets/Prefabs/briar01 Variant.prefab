@@ -86,11 +86,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 271cf495ead0e0c43b3a809d2551c802, type: 2}
+      objectReference: {fileID: 2100000, guid: 3a074f39692213a4fb0c5566715ce7b0, type: 2}
     - target: {fileID: 919132149155446097, guid: 38afc5d5715ea4982bde7bd99cad6a2b,
         type: 3}
       propertyPath: m_Name
-      value: briar01
+      value: briar01 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 38afc5d5715ea4982bde7bd99cad6a2b,
         type: 3}
