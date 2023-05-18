@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1692615374575054080}
   - component: {fileID: 2365158510517691045}
   - component: {fileID: 519686832455603823}
+  - component: {fileID: 2166075607502542885}
   m_Layer: 0
   m_Name: woodPanel
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2166075607502542885
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033005914035419066}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.978574, y: 0.5344115, z: 6.4789743}
+  m_Center: {x: -0.09951842, y: -0.000015258789, z: -0.0012631416}
