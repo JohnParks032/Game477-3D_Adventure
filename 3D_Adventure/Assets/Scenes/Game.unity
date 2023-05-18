@@ -11697,7 +11697,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &199374735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44990,6 +44990,11 @@ MonoBehaviour:
   - 
   - 'Mr. Squirrel: Hello! '
   - 'Me: Hello! '
+  - 'Mr. Squirrel: Wanna hear a secret?'
+  - 'Me: Sure!'
+  - 'Mr. Squirrel: I saw somebody hide a harp in a rock.'
+  - 'Me: Why would they do that?'
+  - 'Mr. Squirrel: I don''t know....'
   - 'Mr. Squirrel: Goodbye! '
   - 'Me: Goodbye! '
   textSpeed: 0.05
@@ -45679,7 +45684,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1114770898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68279,7 +68284,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
