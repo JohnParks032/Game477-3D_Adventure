@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2309,7 +2309,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: F - Activate Ability (Shockwave)
+  m_text: F - Activate Ability (Shockwave/Harp)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 15d7a4d4002174f5684a9bebb0c0c06b, type: 2}
   m_sharedMaterial: {fileID: 7389401231368613585, guid: 15d7a4d4002174f5684a9bebb0c0c06b,
