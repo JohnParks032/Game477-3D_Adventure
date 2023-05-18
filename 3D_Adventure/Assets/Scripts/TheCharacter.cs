@@ -73,18 +73,21 @@ public class TheCharacter : MonoBehaviour
     }
     void OnTriggerEnter(Collider collision){
         if (collision.gameObject.CompareTag("DJAbility")){
+            Game.globalInstance.sndPlayer.PlayOnce(SoundType.ABILITY_PICKUP, GetComponent<AudioSource>());
             Destroy(DJAbility);
             SWAbilityUI.SetActive(false);
             ShootAbilityUI.SetActive(false);
             DJAbilityUI.SetActive(true);
         }
         if (collision.gameObject.CompareTag("SWAbility")){
+            Game.globalInstance.sndPlayer.PlayOnce(SoundType.ABILITY_PICKUP, GetComponent<AudioSource>());
             Destroy(SWAbility);
             DJAbilityUI.SetActive(false);
             ShootAbilityUI.SetActive(false);
             SWAbilityUI.SetActive(true);
         }
         if (collision.gameObject.CompareTag("ShootAbility")){
+            Game.globalInstance.sndPlayer.PlayOnce(SoundType.ABILITY_PICKUP, GetComponent<AudioSource>());
             Destroy(ShootAbility);
             SWAbilityUI.SetActive(false);
             DJAbilityUI.SetActive(false);

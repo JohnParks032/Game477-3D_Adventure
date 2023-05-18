@@ -14,7 +14,8 @@ public enum SoundType
     TROPHY,
     HARP,
     DRUM,
-    OBOE
+    OBOE,
+    ABILITY_PICKUP
 }
 
 public struct Range
@@ -93,7 +94,8 @@ public class AudioManager : MonoBehaviour
       {SoundType.TROPHY, new SoundCollection("trophy") },
       {SoundType.HARP, new SoundCollection("harp") },
       {SoundType.DRUM, new SoundCollection("drum") },
-      {SoundType.OBOE, new SoundCollection("oboe") }
+      {SoundType.OBOE, new SoundCollection("oboe") },
+      {SoundType.ABILITY_PICKUP, new SoundCollection("ability_pickup") }
 
 
     };
