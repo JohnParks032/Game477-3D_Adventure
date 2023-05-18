@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -28551,29 +28551,10 @@ MonoBehaviour:
   textComponent: {fileID: 2006480448}
   lines:
   - 
-  - Why hello there young lizard! Whats your name?
-  - Danole huh? Danole the Anole! Well ain't that a HOOT!
-  - ... ... ...
-  - Get it? Because I'm an owl?
-  - ANYWAY, It appears our magical tree is dying!
-  - The only way to save it is to use the power of the THREE MAGICAL RELICS!
-  - The DRUMS of POWER, to give you the power of a double jump!
-  - The HARP of WISDOM, a sling shot to use not for fighting, but for puzzles!
-  - The OBOE of COURAGE, to create a powerful shockwave to stun enemies and break
-    blocks! (by pressing F)
-  - With the triforce of instruments and the ocarina of time we can defeat Ganno......
-    wait hold on this is the wrong script...
-  - ...ah here it is...
-  - With these threee instrunts found, we can restore our home, the tree of life!
-  - But beware, the tree is infested with termites! You better look for the OBOE
-    of COURAGE!
-  - Lucky for you, we have the OBOE of COURAGE by the ole giant hut. Hurry over there
-    so you can clear the way to the tree!
-  - Well what are you waiting for? Good luck Danole!
-  - When you're ready to leave, go talk to Mr. Skunk behind you over there! Once
-    you press E on him, you'll be out of here faster than a fast animal!
-  - And if you ever need me to repeat this all again (word for word), come back and
-    speak with me!
+  - 'Mr. Squirrel: Hello! '
+  - 'Me: Hello! '
+  - 'Mr. Squirrel: Goodbye! '
+  - 'Me: Goodbye! '
   textSpeed: 0.05
 --- !u!114 &1086065279
 MonoBehaviour:
@@ -29173,7 +29154,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1160331517
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29211,29 +29192,10 @@ MonoBehaviour:
   textComponent: {fileID: 1704954254}
   lines:
   - 
-  - Why hello there young lizard! Whats your name?
-  - Danole huh? Danole the Anole! Well ain't that a HOOT!
-  - ... ... ...
-  - Get it? Because I'm an owl?
-  - ANYWAY, It appears our magical tree is dying!
-  - The only way to save it is to use the power of the THREE MAGICAL RELICS!
-  - The DRUMS of POWER, to give you the power of a double jump!
-  - The HARP of WISDOM, a sling shot to use not for fighting, but for puzzles!
-  - The OBOE of COURAGE, to create a powerful shockwave to stun enemies and break
-    blocks! (by pressing F)
-  - With the triforce of instruments and the ocarina of time we can defeat Ganno......
-    wait hold on this is the wrong script...
-  - ...ah here it is...
-  - With these threee instrunts found, we can restore our home, the tree of life!
-  - But beware, the tree is infested with termites! You better look for the OBOE
-    of COURAGE!
-  - Lucky for you, we have the OBOE of COURAGE by the ole giant hut. Hurry over there
-    so you can clear the way to the tree!
-  - Well what are you waiting for? Good luck Danole!
-  - When you're ready to leave, go talk to Mr. Skunk behind you over there! Once
-    you press E on him, you'll be out of here faster than a fast animal!
-  - And if you ever need me to repeat this all again (word for word), come back and
-    speak with me!
+  - 'Me: Oh boy! What another wonderful day in the giant tree! '
+  - '... ... ... '
+  - "Me: Wait a minute\u2026 Something suspicious is goin on around here... "
+  - 'Me: I think I should go talk to  Mr. Woodpecker by pressing E on him. '
   textSpeed: 0.05
 --- !u!114 &1160331519
 MonoBehaviour:
@@ -29577,29 +29539,25 @@ MonoBehaviour:
   textComponent: {fileID: 1921663874}
   lines:
   - 
-  - Why hello there young lizard! Whats your name?
-  - Danole huh? Danole the Anole! Well ain't that a HOOT!
-  - ... ... ...
-  - Get it? Because I'm an owl?
-  - ANYWAY, It appears our magical tree is dying!
-  - The only way to save it is to use the power of the THREE MAGICAL RELICS!
-  - The DRUMS of POWER, to give you the power of a double jump!
-  - The HARP of WISDOM, a sling shot to use not for fighting, but for puzzles!
-  - The OBOE of COURAGE, to create a powerful shockwave to stun enemies and break
-    blocks! (by pressing F)
-  - With the triforce of instruments and the ocarina of time we can defeat Ganno......
-    wait hold on this is the wrong script...
-  - ...ah here it is...
-  - With these threee instrunts found, we can restore our home, the tree of life!
-  - But beware, the tree is infested with termites! You better look for the OBOE
-    of COURAGE!
-  - Lucky for you, we have the OBOE of COURAGE by the ole giant hut. Hurry over there
-    so you can clear the way to the tree!
-  - Well what are you waiting for? Good luck Danole!
-  - When you're ready to leave, go talk to Mr. Skunk behind you over there! Once
-    you press E on him, you'll be out of here faster than a fast animal!
-  - And if you ever need me to repeat this all again (word for word), come back and
-    speak with me!
+  - 'Ms. Bluejay: Hey you!'
+  - 'Me: Who. Me?'
+  - 'Ms. Bluejay: Yeah doofus! I have a job for you.'
+  - 'Me: What is it?'
+  - 'Ms. Bluejay: I lost all of my acorns around the tree, and I need those back!'
+  - 'Me: Oh no! '
+  - 'Ms. Bluejay: Yeah! I''m feeling real snacky right now.'
+  - 'Ms. Bluejay: The more you collect for me, the higher score I''ll give you.'
+  - 'Me: What''s a score?'
+  - 'Ms. Bluejay: Don''t worry about that! And don''t worry about coming back once
+    the game ends. I''ll find you afterwards.'
+  - 'Me: What game?'
+  - 'Ms. Bluejay: AND DON''T WORRY ABOUT THAT EITHER!'
+  - 'Me: ...meh, okay. I guess I should collect some acorns.'
+  - 'Ms. Bluejay: Oh! And if you ever need me to repeat this all again (word for
+    word), come back and speak with me! I have a very bad memory.'
+  - 'Me: You too huh?'
+  - 'Ms. Bluejay: What''s that dear?'
+  - 'Me: Nothing!'
   textSpeed: 0.05
 --- !u!114 &1184359020
 MonoBehaviour:
@@ -39100,29 +39058,14 @@ MonoBehaviour:
   textComponent: {fileID: 1553822146}
   lines:
   - 
-  - Why hello there young lizard! Whats your name?
-  - Danole huh? Danole the Anole! Well ain't that a HOOT!
-  - ... ... ...
-  - Get it? Because I'm an owl?
-  - ANYWAY, It appears our magical tree is dying!
-  - The only way to save it is to use the power of the THREE MAGICAL RELICS!
-  - The DRUMS of POWER, to give you the power of a double jump!
-  - The HARP of WISDOM, a sling shot to use not for fighting, but for puzzles!
-  - The OBOE of COURAGE, to create a powerful shockwave to stun enemies and break
-    blocks! (by pressing F)
-  - With the triforce of instruments and the ocarina of time we can defeat Ganno......
-    wait hold on this is the wrong script...
-  - ...ah here it is...
-  - With these threee instrunts found, we can restore our home, the tree of life!
-  - But beware, the tree is infested with termites! You better look for the OBOE
-    of COURAGE!
-  - Lucky for you, we have the OBOE of COURAGE by the ole giant hut. Hurry over there
-    so you can clear the way to the tree!
-  - Well what are you waiting for? Good luck Danole!
-  - When you're ready to leave, go talk to Mr. Skunk behind you over there! Once
-    you press E on him, you'll be out of here faster than a fast animal!
-  - And if you ever need me to repeat this all again (word for word), come back and
-    speak with me!
+  - 'Mr. Skunk: Brave young Danole. I see that you have collected:'
+  - 'Mr. Skunk: the mystical Drums of Power!'
+  - 'Mr. Skunk: the wonderous Oboe of Courage!'
+  - 'Mr. Skunk: and the useless harp'
+  - 'Me: That one is my favorite!'
+  - 'Mr. Skunk: Of course it is.'
+  - 'Mr. Skunk: With the power of these mystical instruments, we can heal the tree!'
+  - 'Mr. Skunk: Thank You Danole! '
   textSpeed: 0.05
 --- !u!114 &1792226637
 MonoBehaviour:
@@ -41121,29 +41064,41 @@ MonoBehaviour:
   textComponent: {fileID: 1540061589}
   lines:
   - 
-  - Why hello there young lizard! Whats your name?
-  - Danole huh? Danole the Anole! Well ain't that a HOOT!
+  - 'Mr. Woodpecker: Why hello there young lizard! Whats your name? '
+  - 'Me: I''m Danole! '
   - ... ... ...
-  - Get it? Because I'm an owl?
-  - ANYWAY, It appears our magical tree is dying!
-  - The only way to save it is to use the power of the THREE MAGICAL RELICS!
-  - The DRUMS of POWER, to give you the power of a double jump!
-  - The HARP of WISDOM, a sling shot to use not for fighting, but for puzzles!
-  - The OBOE of COURAGE, to create a powerful shockwave to stun enemies and break
-    blocks! (by pressing F)
-  - With the triforce of instruments and the ocarina of time we can defeat Ganno......
-    wait hold on this is the wrong script...
-  - ...ah here it is...
-  - With these threee instrunts found, we can restore our home, the tree of life!
-  - But beware, the tree is infested with termites! You better look for the OBOE
-    of COURAGE!
-  - Lucky for you, we have the OBOE of COURAGE by the ole giant hut. Hurry over there
-    so you can clear the way to the tree!
-  - Well what are you waiting for? Good luck Danole!
-  - When you're ready to leave, go talk to Mr. Skunk behind you over there! Once
-    you press E on him, you'll be out of here faster than a fast animal!
-  - And if you ever need me to repeat this all again (word for word), come back and
-    speak with me!
+  - 'Mr. Woodpecker: Danole huh? Danole the Anole! Well ain''t that a HOOT! '
+  - 'Me: But, Woodpeckers dont hoot?'
+  - 'Mr. Woodpecker: In this universe they do.'
+  - 'Me: ...'
+  - 'Mr. Woodpecker: Kids these days. ANYWAY, It appears our magical tree is dying!'
+  - 'Mr. Woodpecker: The only way to save it is to use the power of the THREE MAGICAL
+    RELICS!'
+  - 'Me: The THREE MAGICAL RELICS?'
+  - 'Mr. Woodpecker: The THREE MAGICAL RELICS!'
+  - 'Me: WOW! ... What are those?'
+  - 'Mr. Woodpecker: The DRUMS of POWER, to give you the ability of a double jump!'
+  - 'Mr. Woodpecker: The OBOE of COURAGE, to create a powerful shockwave to stun
+    enemies and break blocks!'
+  - 'Mr. Woodpecker: And the HARP of WISDOM! ... that one is useless.'
+  - 'Me: Well can you at least play it?'
+  - 'Mr. Woodpecker: That it CAN do!'
+  - 'Me: Neat.... well the others are cool.'
+  - 'Mr. Woodpecker: With these threee instruments found, we can restore our home,
+    the tree of life!'
+  - 'Me: You know, this kinda sounds like a Zelda clone.'
+  - 'Mr. Woodpecker: Speaking of, Tears of the Kingdom IS pretty great, you should
+    go play it after you save the tree. '
+  - 'Me: Oh yeah, its downloading on my switch back at home.'
+  - 'Mr. Woodpecker: Noice. '
+  - 'Mr. Woodpecker: With your weak little lizard arms, you can''t kill them. You
+    better look for the OBOE of COURAGE!'
+  - 'Mr. Woodpecker: Lucky for you, we have the OBOE of COURAGE just beyond the giant
+    leaf. Hurry over there so you can clear the way!'
+  - 'Me: SIR YES SIR!'
+  - 'Mr. Woodpecker: Well what are you waiting for? Good luck Danole!'
+  - 'Mr. Woodpecker: Oh! And if you ever need me to repeat this all again (word for
+    word), come back and speak with me! I have a very bad memory.'
   textSpeed: 0.05
 --- !u!114 &2073967900
 MonoBehaviour:
